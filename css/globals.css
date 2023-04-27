@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+div#top-hero {
+  width: 100vw;
+  height: 70vh;
+  color: blue;
+}
+
+#button-container {
+  width: 100vw;
+  height: 5vh;
+  background-color: green;
+}
+
+#button-container ul {
+}
+
+#main-nav {
+  width: 100vw;
+  height: 5vh;
+  background-color: red;
+}
+
+#home-hero {
+  width: 100vw;
+  height: 75vh;
+}
+
+footer {
+  display: flex;
+}
