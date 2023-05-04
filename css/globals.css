@@ -7,6 +7,9 @@
 header {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  height: 80px;
+  background-color: hotpink;
 }
 
 div#top-hero {
@@ -22,6 +25,7 @@ div#top-hero {
 }
 
 #button-container ul {
+  list-style: none;
 }
 
 #main-nav {
