@@ -11,7 +11,8 @@ header {
 }
 
 header a {
-  margin: 0 15px;
+  margin-left: 15px;
+  width: 300px;
   height: 60px;
   flex-shrink: 0;
 }
@@ -58,6 +59,7 @@ header nav a:hover {
 
 .head-button-container i {
   font-size: 26px;
+  transition: color 0.1s ease 0.001s;
 }
 
 .head-button-container button {
@@ -66,6 +68,88 @@ header nav a:hover {
   flex: 1;
 }
 
+.head-button-container button:hover i {
+  color: rgb(215, 170, 60);
+}
+
 footer {
-  height: 500px;
+  height: 600px;
+  background-color: lightgray;
+  border-top: 2px solid rgb(215, 170, 60);
+  padding-top: 70px;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.footer-title {
+  text-align: center;
+}
+
+footer h2 {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+footer nav {
+  display: flex;
+  padding-left: 2px;
+}
+
+footer nav ul {
+  flex-direction: column;
+  align-items: start;
+}
+
+footer nav ul li {
+  margin: 8px 0;
+}
+
+footer a {
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  transition: text-decoration 0.1s ease;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer div {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+  width: 70%;
+  margin-top: 120px;
+}
+
+.socials {
+  flex-direction: row;
+}
+
+.socials li {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.socials a {
+  font-size: 38px;
+  transition: color 0.1s ease;
+}
+
+.socials a:hover {
+  color: rgb(215, 170, 60);
+}
+
+footer p {
+  font-size: 16px;
+  padding: 20px;
 }
