@@ -128,7 +128,7 @@ products.forEach((product) => {
   productGrid.insertAdjacentHTML(
     "beforeend",
     `     
-  <a href="">    
+  <div class="product-grid-item">    
     <div class="product">
       <img
         class="product-logo"
@@ -143,7 +143,7 @@ products.forEach((product) => {
         </div>
       </div>
     </div>
-  </a>
+  </div>
   `
   );
 });
