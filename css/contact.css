@@ -87,3 +87,26 @@ textarea {
 #send-button:hover {
   background-color: rgb(50, 50, 50);
 }
+
+@media screen and (max-width: 850px) {
+  .row {
+    flex-direction: column;
+  }
+  #fname {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  form {
+    width: 85vw;
+    max-width: 700px;
+    padding: 80px 0px;
+    font-family: "Roboto", Arial;
+  }
+
+  #send-button {
+    font-size: 14px;
+    padding-left: 10px;
+  }
+}

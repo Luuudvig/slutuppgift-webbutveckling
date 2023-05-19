@@ -186,7 +186,7 @@ for (let i = 0; i < productItems.length; i++) {
     productHeight.innerHTML = `${products[i].dimensions.height} cm`;
     productWidth.innerHTML = `${products[i].dimensions.width} cm`;
     productDepth.innerHTML = `${products[i].dimensions.depth} cm`;
-    productWeight.innerHTML = `${products[i].dimensions.weight} kg`;
+    productWeight.innerHTML = `${products[i].weight} kg`;
     productColor.innerHTML = products[i].color;
 
     productWindow.style.display = "flex";
