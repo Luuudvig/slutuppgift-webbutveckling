@@ -21,8 +21,7 @@ section {
 
 #home-hero p {
   position: absolute;
-  top: 120px;
-  left: 120px;
+  inset: 120px auto auto 120px;
   width: 30vw;
 
   color: white;
@@ -71,8 +70,7 @@ section {
 
 .category h2 {
   position: absolute;
-  bottom: 12px;
-  left: 15px;
+  inset: auto auto 12px 15px;
   color: white;
 }
 
@@ -135,8 +133,7 @@ section {
 
   #home-hero p {
     width: 85vw;
-    top: 60px;
-    left: 40px;
+    inset: 60px auto auto 40px;
     font-size: 25px;
   }
 
