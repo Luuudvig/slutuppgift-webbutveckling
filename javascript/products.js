@@ -194,7 +194,7 @@ for (let i = 0; i < productItems.length; i++) {
     setTimeout(() => {
       productWindow.style.opacity = "1";
     }, 100);
-    document.getElementById("html").style.overflowY = "hidden";
+    document.documentElement.classList.toggle("noScroll");
   });
 }
 
@@ -206,5 +206,5 @@ closeProductWindow.addEventListener("click", () => {
   setTimeout(() => {
     productWindow.style.display = "none";
   }, 100);
-  document.getElementById("html").style.overflowY = "scroll";
+  document.documentElement.classList.toggle("noScroll");
 });

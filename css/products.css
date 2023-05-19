@@ -103,7 +103,7 @@
   inset: 10px 0 0 10px;
   font-size: 60px;
   background-color: white;
-  transition: color 0.1 ease 0.1;
+  transition: color 0.1s ease 0.1s;
 }
 
 #close-target-window:hover {
