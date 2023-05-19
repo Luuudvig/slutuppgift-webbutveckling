@@ -178,6 +178,8 @@ for (let i = 0; i < productItems.length; i++) {
     let productWeight = document.getElementById("productWeight");
     let productColor = document.getElementById("productColor");
 
+    //Om jag inte skapar en variabel för varje element som ska ändras och istället byter ut t ex productName till document.getElementById("large-product-name"), gör prettier att det blir fulare och mindre lättläst
+
     productName.innerHTML = products[i].name;
     productImage.src = products[i].image;
     productType.innerHTML = products[i].type;
