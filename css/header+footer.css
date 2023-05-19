@@ -76,10 +76,54 @@ header nav a:hover {
   color: rgb(215, 170, 60);
 }
 
-#hamburger-menu {
+#hamburger-menu-button {
   display: none;
   font-size: 55px;
   margin-right: 30px;
+  background-color: white;
+}
+
+#hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  inset: 80px 0 auto 0;
+  width: 100%;
+  min-height: 100px;
+  background-color: lightyellow;
+  color: black;
+}
+
+#hamburger-menu nav {
+  display: block;
+}
+
+#hamburger-menu nav ul {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;-
+}
+
+#hamburger-menu nav ul li {
+  margin: 6px 0;
+}
+
+#hamburger-menu .head-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+  margin: 12px;
+}
+
+#hamburger-menu .head-button-container i {
+  font-size: 26px;
+  transition: color 0.1s ease 0.001s;
+}
+
+#hamburger-menu .head-button-container button {
+  background-color: white;
+  margin: 0;
 }
 
 footer {
@@ -91,7 +135,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  bottom: 0px;
+  bottom: 0;
 }
 
 footer ul {
@@ -170,7 +214,7 @@ footer p {
   .head-button-container {
     display: none;
   }
-  #hamburger-menu {
+  #hamburger-menu-button {
     display: inline-block;
   }
 
