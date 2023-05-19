@@ -44,7 +44,7 @@ const products = [
     extraImages: [],
   },
   {
-    name: "Havana Vintage Crossbody Messenger Bag",
+    name: "Havana Vintage Messenger Bag",
     description:
       "ras nec dui facilisis, consectetur nunc vitae, gravida nulla. Suspendisse non metus sit amet metus ultrices tristique sed fermentum felis. Morbi vitae congue sapien, vel pulvinar urna. In quis tempus orci, a condimentum urna. Phasellus commodo augue pharetra, faucibus dolor eu, sollicitudin tortor. Nulla lobortis, mauris non ultricies sodales, tellus sapien vehicula quam, at porttitor dui libero eu leo. Aliquam arcu tortor, pharetra at sagittis et, pulvinar a leo. Nunc ut tortor vel dolor sagittis elementum a quis velit. Aenean varius convallis eleifend.",
     image: "../img/products/Havana Vintage Crossbody Messenger Bag.png",
@@ -77,7 +77,7 @@ const products = [
     extraImages: [],
   },
   {
-    name: "Khaki Vintage Crossbody Messenger Bag",
+    name: "Khaki Vintage Crossbody Bag",
     description:
       "ras nec dui facilisis, consectetur nunc vitae, gravida nulla. Suspendisse non metus sit amet metus ultrices tristique sed fermentum felis. Morbi vitae congue sapien, vel pulvinar urna. In quis tempus orci, a condimentum urna. Phasellus commodo augue pharetra, faucibus dolor eu, sollicitudin tortor. Nulla lobortis, mauris non ultricies sodales, tellus sapien vehicula quam, at porttitor dui libero eu leo. Aliquam arcu tortor, pharetra at sagittis et, pulvinar a leo. Nunc ut tortor vel dolor sagittis elementum a quis velit. Aenean varius convallis eleifend.",
     image: "../img/products/Khaki Vintage Crossbody Messengar Bag.png",
@@ -115,7 +115,7 @@ const products = [
       "ras nec dui facilisis, consectetur nunc vitae, gravida nulla. Suspendisse non metus sit amet metus ultrices tristique sed fermentum felis. Morbi vitae congue sapien, vel pulvinar urna. In quis tempus orci, a condimentum urna. Phasellus commodo augue pharetra, faucibus dolor eu, sollicitudin tortor. Nulla lobortis, mauris non ultricies sodales, tellus sapien vehicula quam, at porttitor dui libero eu leo. Aliquam arcu tortor, pharetra at sagittis et, pulvinar a leo. Nunc ut tortor vel dolor sagittis elementum a quis velit. Aenean varius convallis eleifend.",
     image: "../img/products/Rucksack Large - Khaki Canvas.png",
     price: 199,
-    type: "Shoulder bag",
+    type: "Backpack",
     dimensions: { height: 20, width: 30, depth: 15 },
     weight: 2,
     extraImages: [],
@@ -127,10 +127,9 @@ const productGrid = document.getElementById("product-grid");
 products.forEach((product) => {
   productGrid.insertAdjacentHTML(
     "beforeend",
-    `
-            
-  <div class="product">
-    <a href="">
+    `     
+  <a href="">    
+    <div class="product">
       <img
         class="product-logo"
         src="${product.image}"
@@ -138,27 +137,13 @@ products.forEach((product) => {
       />
       <div class="product-text">
         <div class="product-name">${product.name}</div>
-        <div class="product-info">Oogway</div>
-        <div class="product-price">${product.price}</div>
+        <div class="product-info">
+          <div class="product-type">${product.type}</div>
+          <div class="product-price">$${product.price}</div>
+        </div>
       </div>
-    </a>
-  </div>
-  
+    </div>
+  </a>
   `
   );
 });
-
-// <div class="product">
-//           <a href="">
-//             <img
-//               class="product-logo"
-//               src="../img/products/Havana Shoulder Bag.png"
-//               alt=""
-//             />
-//             <div class="product-text">
-//               <div class="product-name">Havana Canvas Shoulder Bag</div>
-//               <div class="product-info">Oogway</div>
-//               <div class="product-price">$199</div>
-//             </div>
-//           </a>
-//         </div>

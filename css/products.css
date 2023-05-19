@@ -21,26 +21,26 @@
   white-space: nowrap;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
-
 #product-grid {
   margin: 0 300px;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
+  gap: 60px 40px;
+}
+
+#product-grid a {
+  text-decoration: none;
+  color: black;
 }
 
 .product {
   display: flex;
   flex-direction: column;
-
-  margin: 30px 20px;
-  border-radius: 4px;
-
+  position: relative;
   background-color: rgb(242, 242, 242);
+  border-radius: 8px;
 }
 
 .product-logo {
@@ -61,5 +61,10 @@ a {
 .product-name {
   font-size: 22px;
   font-weight: 500;
-  margin-bottom: 12px;
+  margin-bottom: 50px;
+}
+
+.product-info {
+  position: absolute;
+  bottom: 0px;
 }
