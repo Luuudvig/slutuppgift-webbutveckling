@@ -74,17 +74,13 @@
 
 #target-product {
   position: fixed;
-  inset: 120px 0 0 0;
+  inset: 0px 0 0 0;
   z-index: 500;
   background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
+  display: none;
   align-items: flex-start;
   justify-content: center;
   overflow-y: auto;
-}
-
-html {
-  overflow-y: hidden;
 }
 
 #product-window {
@@ -92,7 +88,8 @@ html {
   background-color: white;
   display: flex;
   flex-direction: column;
-  margin-bottom: 100px;
+  position: relative;
+  margin: 100px 0;
   border-radius: 8px;
 }
 
@@ -100,17 +97,26 @@ html {
   height: 50px;
   width: 50px;
   margin: 10px;
+  position: absolute;
+  inset: 10px 0 0 10px;
+  font-size: 60px;
+  background-color: white;
+  transition: 0.1 ease 0.1;
 }
 
-#product-image-actions {
+#close-target-window:hover {
+  color: rgb(215, 170, 60);
+}
+
+#product-image-actions-container {
   display: flex;
+  flex-direction: row;
   margin: 30px;
   justify-content: space-around;
 }
 
 #large-product-logo {
-  flex: 1;
-  border: 2px solid rgba(0, 0, 0, 0.1);
+  flex: 4;
   margin: 10px;
 }
 
@@ -119,15 +125,95 @@ html {
 }
 
 #actions-container {
-  flex: 4;
+  flex: 3;
+  margin: 50px;
 }
 
 #actions-container h1 {
   font-size: 45px;
 }
 
-#product-specifications {
-  height: 800px;
+#product-type,
+#product-price {
+  font-size: 20px;
+}
+
+#add-to-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: black;
+  color: white;
+
+  font-size: 22px;
+  font-weight: 700;
+
+  height: 60px;
   width: 100%;
-  background-color: lightblue;
+  margin-top: 150px;
+  border-radius: 2px;
+
+  transition: 0.3s ease 0.1s;
+}
+
+#add-to-cart:hover {
+  height: 70px;
+}
+
+#add-to-cart div {
+  margin-right: 18px;
+}
+
+#add-to-cart i {
+  font-size: 26px;
+}
+
+#product-specifications-description-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 140px;
+}
+
+#product-specifications-description-container div {
+  flex: 1;
+  margin: 30px 60px;
+}
+#product-specifications-description-container p {
+  font-size: 18px;
+  margin-top: 18px;
+}
+
+table {
+  margin-top: 18px;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 18px;
+}
+
+tr {
+  background-color: white;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(240, 240, 240);
+}
+
+td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+thead,
+tfoot {
+  text-align: left;
+  background-color: black;
+}
+
+th {
+  padding: 8px;
+  background-color: black;
+  border: 1px solid black;
+  color: white;
 }

@@ -147,3 +147,11 @@ products.forEach((product) => {
   `
   );
 });
+
+let productWindow = docment.getElementById("target-product");
+
+let griditem = document.getElementsByClassName("product-grid-item");
+griditem.onclick = function (event) {
+  productWindow.style.display = "flex";
+  document.getElementsByTagName("html").style.overflow = "hidden";
+};
