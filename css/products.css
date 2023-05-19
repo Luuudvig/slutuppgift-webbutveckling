@@ -115,12 +115,12 @@
   justify-content: space-around;
 }
 
-#large-product-logo {
+#large-product-image {
   flex: 4;
   margin: 10px;
 }
 
-#large-product-logo img {
+#large-product-image img {
   width: 100%;
 }
 
