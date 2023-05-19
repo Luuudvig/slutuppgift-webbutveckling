@@ -84,7 +84,7 @@ header nav a:hover {
 }
 
 #hamburger-menu {
-  display: flex;
+  display: none;
   flex-direction: column;
   position: fixed;
   inset: 80px 0 auto 0;
@@ -93,6 +93,10 @@ header nav a:hover {
   background-color: white;
   color: black;
   padding-bottom: 15px;
+}
+
+#hamburger-menu.display-flex {
+  display: flex;
 }
 
 #hamburger-menu nav {
