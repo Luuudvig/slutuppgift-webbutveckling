@@ -138,8 +138,8 @@ products.forEach((product) => {
       <div class="product-text">
         <div class="product-name">${product.name}</div>
         <div class="product-info">
-          <div class="product-type">${product.type}</div>
-          <div class="product-price">$${product.price}</div>
+          <div>${product.type}</div>
+          <div>$${product.price}</div>
         </div>
       </div>
     </div>

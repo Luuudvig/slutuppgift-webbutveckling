@@ -10,8 +10,8 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="..\css\globals.css" />
-    <link rel="stylesheet" href="..\css\products.css" />
     <link rel="stylesheet" href="..\css\header+footer.css" />
+    <link rel="stylesheet" href="..\css\products.css" />
   </head>
   <body>
     <header>
@@ -35,14 +35,32 @@
 
     <main>
       <section id="all-products-hero"><h1>All products</h1></section>
+
       <section id="target-product">
         <div id="product-window">
-          <img src="" alt="stor bild på väskan du klickade på" />
+          <button id="close-target-window"></button>
+          <div id="product-image-actions">
+            <img
+              id="large-product-logo"
+              src="../img\products\Khaki Large Vintage Shoulder Bag.png"
+              alt="stor bild på väskan du klickade på"
+            />
+            <div id="actions-container">
+              <h1>Khaki Large Vintage Shoulder Bag</h1>
+              <div id="product-type"></div>
+              <div id="product-description"></div>
+              <div id="add-to-cart"></div>
+            </div>
+          </div>
+          <div id="product-specifications">
+            <table></table>
+          </div>
         </div>
       </section>
-      <div class="separator"></div>
-      <section id="product-grid"></section>
 
+      <div class="separator"></div>
+
+      <section id="product-grid"></section>
       <div class="separator"></div>
     </main>
 
