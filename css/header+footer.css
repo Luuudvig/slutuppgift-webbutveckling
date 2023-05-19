@@ -11,11 +11,11 @@ header {
 }
 
 header img {
+  margin-left: 12px;
   height: 100%;
 }
 
 header a {
-  margin-left: 15px;
   width: 300px;
   height: 60px;
   flex-shrink: 0;
@@ -90,22 +90,36 @@ header nav a:hover {
   inset: 80px 0 auto 0;
   width: 100%;
   min-height: 100px;
-  background-color: lightyellow;
+  background-color: white;
   color: black;
+  padding-bottom: 15px;
 }
 
 #hamburger-menu nav {
   display: block;
 }
 
-#hamburger-menu nav ul {
+#hamburger-menu ul {
   display: flex;
   flex-direction: column;
-  padding-top: 10px;-
+  padding-top: 10px;
+  align-items: center;
 }
 
-#hamburger-menu nav ul li {
-  margin: 6px 0;
+#hamburger-menu a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 90vw;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin: 4px;
+  font-size: 22px;
+}
+
+#hamburger-menu li {
+  display: block;
 }
 
 #hamburger-menu .head-button-container {
@@ -113,7 +127,7 @@ header nav a:hover {
   display: flex;
   justify-content: space-between;
   flex-shrink: 0;
-  margin: 12px;
+  margin-top: 12px;
 }
 
 #hamburger-menu .head-button-container i {
