@@ -240,6 +240,9 @@ footer p {
   #hamburger-menu-button {
     display: inline-block;
   }
+  #hamburger-menu nav {
+    display: none;
+  }
 
   footer h2 {
     font-size: 35px;
@@ -247,6 +250,10 @@ footer p {
 }
 
 @media screen and (max-width: 850px) {
+  #hamburger-menu nav {
+    display: flex;
+  }
+
   header nav {
     display: none;
   }
