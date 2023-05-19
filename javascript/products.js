@@ -2,11 +2,11 @@ const products = [
   {
     name: "Grand Document Bag - Black",
     description:
-      "Praesent feugiat metus mi, in sagittis elit ultricies a. Sed eget faucibus arcu, non rutrum nibh. Cras sed pellentesque enim, ut placerat neque. Phasellus in enim et tortor auctor auctor. Vestibulum eget pharetra erat, ut fermentum nunc. Etiam aliquam ante blandit mattis aliquet. Maecenas nec molestie odio, ut hendrerit nisi. Morbi vehicula molestie est et varius.",
+      "Black dokument Praesent feugiat metus mi, in sagittis elit ultricies a. Sed eget faucibus arcu, non rutrum nibh. Cras sed pellentesque enim, ut placerat neque. Phasellus in enim et tortor auctor auctor. Vestibulum eget pharetra erat, ut fermentum nunc. Etiam aliquam ante blandit mattis aliquet. Maecenas nec molestie odio, ut hendrerit nisi. Morbi vehicula molestie est et varius.",
     image: "../img/products/grand document bag black.png",
-    price: 199,
+    price: 299,
     type: "Shoulder bag",
-    dimensions: { height: 20, width: 30, depth: 15 },
+    dimensions: { height: 40, width: 50, depth: 20 },
     weight: 2,
     color: "Black",
     extraImages: [],
@@ -162,39 +162,49 @@ products.forEach((product) => {
 //Mer info skärm
 const productWindow = document.getElementById("target-product");
 const productItems = productGrid.getElementsByClassName("product-grid-item");
+
 for (let i = 0; i < productItems.length; i++) {
   const productItem = productItems[i];
+
   productItem.addEventListener("click", () => {
     let productName = document.getElementById("large-product-name");
-    let productImage = document.getElementById("large-product-image");
+    let productImage = document.getElementById("productImage");
     let productType = document.getElementById("product-type");
     let productPrice = document.getElementById("product-price");
-    let productDescription = document.getElementById("product-description");
-    let productHeight = document.getElementById("product-price");
-    let productWidth = document.getElementById("product-description");
-    let productDepth = document.getElementById("product-price");
-    let productWeight = document.getElementById("product-description");
-    let productColor = document.getElementById("product-color");
+    let productDescription = document.getElementById("productDescription");
+    let productHeight = document.getElementById("productHeight");
+    let productWidth = document.getElementById("productWidth");
+    let productDepth = document.getElementById("productDepth");
+    let productWeight = document.getElementById("productWeight");
+    let productColor = document.getElementById("productColor");
 
     productName.innerHTML = products[i].name;
-    productImage.innerHTML = products[i].image;
+    productImage.src = products[i].image;
     productType.innerHTML = products[i].type;
-    productPrice.innerHTML = products[i].price;
+    productPrice.innerHTML = `$${products[i].price}`;
     productDescription.innerHTML = products[i].description;
-    productHeight.innerHTML = products[i].dimensions.height;
-    productWidth.innerHTML = products[i].dimensions.width;
-    productDepth = products[i].dimensions.depth;
-    productWeight.innerHTML = products[i].weight;
+    productHeight.innerHTML = `${products[i].dimensions.height} cm`;
+    productWidth.innerHTML = `${products[i].dimensions.width} cm`;
+    productDepth.innerHTML = `${products[i].dimensions.depth} cm`;
+    productWeight.innerHTML = `${products[i].dimensions.weight} kg`;
     productColor.innerHTML = products[i].color;
 
     productWindow.style.display = "flex";
+    productWindow.style.opacity = "0";
+    setTimeout(() => {
+      productWindow.style.opacity = "1";
+    }, 100);
     document.getElementById("html").style.overflowY = "hidden";
   });
 }
 
 //Stäng info skärmen
 const closeProductWindow = document.getElementById("close-target-window");
+
 closeProductWindow.addEventListener("click", () => {
-  productWindow.style.display = "none";
+  productWindow.style.opacity = "0";
+  setTimeout(() => {
+    productWindow.style.display = "none";
+  }, 100);
   document.getElementById("html").style.overflowY = "scroll";
 });
