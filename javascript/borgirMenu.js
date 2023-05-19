@@ -4,4 +4,5 @@ const burgerMenu = document.getElementById("hamburger-menu");
 burgerButton.addEventListener("click", () => {
   burgerMenu.classList.toggle("display-flex");
   document.documentElement.classList.toggle("noScroll");
+  burgerButton.classList.toggle("rotate-270");
 });
