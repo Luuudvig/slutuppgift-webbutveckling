@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Butik</title>
+    <script
+      src="https://kit.fontawesome.com/aa235e2004.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="..\css\globals.css" />
+    <link rel="stylesheet" href="..\css\header+footer.css" />
+    <link rel="stylesheet" href="..\css\contact.css" />
+  </head>
+  <body>
+    <header>
+      <a href="../html/index.html"
+        ><img src="../img/logo teeddoo gold 2.png" alt="logo"
+      /></a>
+      <nav>
+        <ul>
+          <li><a href="../html/shop.html">Shop</a></li>
+          <li><a href="../html/collections.html">Collections</a></li>
+          <li><a href="../html/our_story.html">Our Story</a></li>
+        </ul>
+      </nav>
+      <div class="head-button-container">
+        <button><i class="fa-solid fa-location-dot"></i></button>
+        <button><i class="fa-solid fa-user"></i></button>
+        <button><i class="fa-solid fa-heart"></i></button>
+        <button><i class="fa-solid fa-cart-shopping"></i></button>
+      </div>
+    </header>
+
+    <main>
+      <section id="send-form-hero"></section>
+      <div class="separator"></div>
+      <section id="send-mail-form">
+        <form>
+          <div id="name" class="form-part">
+            <h4>Name <span class="required">(required)</span></h4>
+            <div class="row">
+              <div class="column">
+                <h5>First Name</h5>
+                <input type="text" name="first name" id="fname" required />
+              </div>
+              <div class="column">
+                <h5>Last Name</h5>
+                <input type="text" name="last name" id="lname" required />
+              </div>
+            </div>
+          </div>
+
+          <div id="email-address" class="form-part">
+            <h4>Email Adress <span class="required">(required)</span></h4>
+            <input type="email" name="email id="email"
+            placeholder="example@example.com" required />
+          </div>
+
+          <div class="form-part">
+            <h4>Subject <span class="required">(required)</span></h4>
+            <select name="subject" id="subject" required>
+              <option>Other</option>
+              <option>Returns</option>
+              <option>Shipping</option>
+              <option>Payment</option>
+            </select>
+          </div>
+
+          <div class="form-part">
+            <h4>Message <span class="required">(required)</span></h4>
+            <textarea name="text" required maxlength="2000"></textarea>
+          </div>
+          <div class="form-part submit-button">
+            <input
+              type="submit"
+              value="Submit"
+              id="send-button"
+              class="form-del rundade-hörn"
+            />
+          </div>
+        </form>
+      </section>
+      <div class="separator"></div>
+      <div class="separator"></div>
+    </main>
+
+    <footer>
+      <ul>
+        <li class="footer-title">
+          <h2>CONTACT</h2>
+          <nav>
+            <ul>
+              <li><a href="">Live chat</a></li>
+              <li><a href="">Customer Care</a></li>
+              <li><a href="../html/contact.html">Email us</a></li>
+              <li><a href="../html/store_locator.html">Store locator</a></li>
+            </ul>
+          </nav>
+        </li>
+        <li class="footer-title">
+          <h2>SERVICES</h2>
+          <nav>
+            <ul>
+              <li><a href="">Free returns</a></li>
+              <li><a href="">Free shipping</a></li>
+              <li><a href="">Print return label</a></li>
+              <li><a href="">Express delivery</a></li>
+              <li><a href="">Order Status</a></li>
+            </ul>
+          </nav>
+        </li>
+        <li class="footer-title">
+          <h2>OUR COMPANY</h2>
+          <nav>
+            <ul>
+              <li><a href="">Careers</a></li>
+              <li><a href="">Investor Relations</a></li>
+              <li><a href="">Sustainability</a></li>
+              <li><a href="">Press</a></li>
+            </ul>
+          </nav>
+        </li>
+      </ul>
+      <div>
+        <nav>
+          <ul class="socials">
+            <li>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://facebook.com/" target="_blank"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.pinterest.com/" target="_blank"
+                ><i class="fa-brands fa-square-pinterest"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com" target="_blank"
+                ><i class="fa-brands fa-square-twitter"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+        <img width="250px" src="../img/teeddoo-logo-black-250-px.png" alt="" />
+        <p>&copy 2023 All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="..\javascript\script.js"></script>
+  </body>
+</html>
